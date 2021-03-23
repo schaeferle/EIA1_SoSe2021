@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Meine fiktives Portfolio</h1>
+
+<p>Hier sieht man meine Bilder:</p>
+
+</body>
+</html>
