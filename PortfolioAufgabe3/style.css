@@ -1,8 +1,143 @@
 body {
     background-image: url("bg.png");
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: auto;
 }
 
-h1 {
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-} 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e6e6ff;
+    position: fixed;
+    top: 0;
+    width: 13%;
+    float: right;
+    margin-left: 800px;
+   
+    text-align: center;
+  }
+  
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 7px 8px;
+    
+    text-decoration: none;
+    
+  }
+  
+  li a:hover:not(.active) {
+    color:#8b5cf8;
+  }
+
+  .active {
+    background-color:#8b5cf8;
+  }
+
+.header {
+    background: #e6e6ff;
+    height: 400px;
+    width: 700px;
+    -webkit-border-radius: 0px 0px 400px 400px;
+    -moz-border-radius: 0px 0px 400px 400px;
+    border-radius: 0px 0px 400px 400px;
+    position: center;
+    margin: auto;  
+    margin-top: -20px;
+   
+ 
+}
+
+.ueberschrift {
+  color: rgb(0, 0, 25);
+  font-size: 140px;
+  font-family: sans-serif;
+  margin: auto;
+  margin-top: -330px;
+  margin-left: 130px;
+  margin-bottom: 200px;
+}
+  
+.subtitle {
+  color: rgb(0, 0, 25);
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: auto;
+  margin-top: -220px;
+  margin-left: 430px;
+  margin-bottom: 200px;
+}
+
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-top: -195px;
+  margin-left: 430px;
+  margin-bottom: 100px;
+}
+
+.icon img:hover {
+opacity: 80%;
+}
+
+
+audio {
+width: 800px;
+box-shadow: 0 4px 8px 0 rgb(255, 255, 255)6px 20px 0 rgba(255, 255, 255, 0.19);
+border-radius: 15px;
+}
+
+.studio {
+  width: 800px;
+  height: 533px;
+}
+
+h2 {
+color: #e6e6ff;    
+font-size: 30px;
+font-family: 'Spartan', sans-serif;
+letter-spacing: 3px;
+}
+
+input {
+  width: 25%;
+  height: 20px;
+  background-color: rgb(187, 185, 185);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: none;
+}
+
+#Nachricht {
+  width: 40%;
+  height: 40px;
+}
+
+.Datenschutz {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+button {
+  width: 10%;
+  height: 20px;
+  background-color: rgb(187, 185, 185);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 4px;
+
+}
