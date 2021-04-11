@@ -36,11 +36,11 @@ ul {
   }
   
   li a:hover:not(.active) {
-    color:#8b5cf8;
+    color: '#0f0031';
   }
 
   .active {
-    background-color:#8b5cf8;
+    background-color:#3b3550;
   }
 
 .header {
