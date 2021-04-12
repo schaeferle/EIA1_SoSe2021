@@ -58,34 +58,24 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #e6e6ff;
   position: fixed;
   top: 0;
-  width: 13%;
-  float: right;
+  width: 5%;
+  float: left;
   margin-left: 800px;
  
   text-align: center;
 }
 
-
-li {
-  float: left;
-}
-
 li a {
-  display: grid ;
+  text-decoration: none;
+  display:inline-block;
   color: black;
   text-align: center;
   padding: 7px 8px;
-  
   text-decoration: none;
   
-}
-
-li a:hover:not(.active) {
-  color: '#0f0031';
 }
 
 .active {
@@ -116,8 +106,8 @@ input {
 }
 
 #message {
-  width: 40%;
-  height: 40px;
+  width: 60%;
+  height: 60px;
 }
 
 .Datenschutz {
@@ -127,12 +117,12 @@ input {
 }
 
 button {
-  width: 10%;
-  height: 20px;
-  background-color: rgb(0, 7, 48);
-  color: rgb(255, 255, 255);
+  width: 15%;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 3, 34);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 4px;
 
 }
