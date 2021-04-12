@@ -5,44 +5,6 @@ body {
     margin: auto;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #e6e6ff;
-    position: fixed;
-    top: 0;
-    width: 13%;
-    float: right;
-    margin-left: 800px;
-   
-    text-align: center;
-  }
-  
-
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: grid ;
-    color: black;
-    text-align: center;
-    padding: 7px 8px;
-    
-    text-decoration: none;
-    
-  }
-  
-  li a:hover:not(.active) {
-    color: '#0f0031';
-  }
-
-  .active {
-    background-color:#3b3550;
-  }
-
 .header {
     background: #e6e6ff;
     height: 400px;
@@ -57,7 +19,7 @@ ul {
  
 }
 
-.ueberschrift {
+.title {
   color: rgb(0, 0, 25);
   font-size: 155px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -89,25 +51,51 @@ ul {
 }
 
 .icon img:hover {
-opacity: 80%;
+opacity: 50%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e6e6ff;
+  position: fixed;
+  top: 0;
+  width: 13%;
+  float: right;
+  margin-left: 800px;
+ 
+  text-align: center;
 }
 
 
-audio {
-width: 800px;
-box-shadow: 0 4px 8px 0 rgb(255, 255, 255)6px 20px 0 rgba(255, 255, 255, 0.19);
-border-radius: 15px;
+li {
+  float: left;
 }
 
-.studio {
-  width: 800px;
-  height: 533px;
+li a {
+  display: grid ;
+  color: black;
+  text-align: center;
+  padding: 7px 8px;
+  
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  color: '#0f0031';
+}
+
+.active {
+  background-color:#3b3550;
 }
 
 h2 {
 color: #e6e6ff;    
-font-size: 30px;
-font-family: sans-serif;
+font-size: 35px;
+font-family: Arial, Helvetica, sans-serif;
 letter-spacing: 3px;
 }
 
@@ -118,23 +106,22 @@ h3 {
     }
 
 input {
-  width: 25%;
+  width: 40%;
   height: 20px;
-  background-color: rgb(187, 185, 185);
-  color: white;
+  background-color: rgb(3, 0, 43);
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  border-radius: 4px;
-  outline: none;
+  border-radius: 2px;
 }
 
-#Nachricht {
+#message {
   width: 40%;
   height: 40px;
 }
 
 .Datenschutz {
-  color: rgb(58, 58, 58);
+  color: rgb(165, 165, 165);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
