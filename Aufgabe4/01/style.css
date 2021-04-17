@@ -1,0 +1,35 @@
+body {
+    background-image: url(bg.png);
+}
+
+.Karte {
+    background-image: url(wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+.text {
+    color: white;
+    margin-top: -30px;
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: left;
+}
+
+.shells {
+    margin-top: -30px;
+    margin-left: -50px;
+}
+
+.penguin {
+    margin-top: -200px;
+    margin-left: 500px;
+}

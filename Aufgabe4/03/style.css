@@ -1,0 +1,29 @@
+body {
+    background-image: url(bg.png);
+}
+
+.Karte {
+    background-image: url(wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#title {
+    color: white;
+    text-align: left;
+    padding: 45px;
+    margin-left: 15px;
+    font-family: jellyka_delicious_cakeregular;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    margin-top: -30px;
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: left;
+    font-family: jellyka_delicious_cakeregular;
+}

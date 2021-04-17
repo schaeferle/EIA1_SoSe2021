@@ -1,0 +1,25 @@
+body {
+    background-image: url(bg.png);
+}
+
+.Karte {
+    background-image: url(wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.banderole {
+    position: absolute;
+    margin-top: 277px;
+    margin-left: 371px;
+    z-index: 10;
+}
+
+.video {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 50px;
+    z-index: 0;
+}

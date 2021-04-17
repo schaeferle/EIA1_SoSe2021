@@ -1,0 +1,58 @@
+body {
+    background-image: url(bg.png);
+}
+
+.Karte {
+    background-image: url(wrapperbg.png);
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#title {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    padding: 45px;
+    margin-left: 15px;
+}
+
+.text {
+    color: white;
+    font-size: 13px;
+    margin-left: 60px;
+    margin-right: 280px;
+    margin-top: 44px;
+    text-align: left;
+}
+
+.video {
+    position:absolute;
+    margin-top: 27px;
+    margin-left: 328px;
+}
+
+.shell_1 {
+    position:absolute;
+    margin-top: 40px;
+    margin-left: 480px;
+}
+
+.shell_2 {
+    position:absolute;
+    margin-top: 85px;
+    margin-left: 100px;
+}
+
+.shell_3 {
+    position:absolute;
+    margin-top: 280px;
+    margin-left: 230px;
+}
+
+.star {
+    position:absolute;
+    margin-top: 343px;
+    margin-left: 470px;
+}
