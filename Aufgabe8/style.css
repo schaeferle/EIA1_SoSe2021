@@ -1,0 +1,255 @@
+body{
+    background-color: black;
+}
+
+.buttonAll{
+    position: relative;
+    margin: 0 auto;
+    height: 460px;
+    width: 460px;
+    background-color:black;
+    top:100px;
+}
+
+.button1{
+    position:absolute;
+    width:150px;
+    height:150px;
+    background-color:#5993ff;
+    border-radius: 15px;
+    cursor: pointer;    
+}
+
+.button1:hover{
+    transform: scale(0.99);
+}
+
+.button1:active{
+    background-color:#bbd3ff;
+}
+
+.button2{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    background-color:#5993ff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button2:hover{
+    transform: scale(0.99);
+}
+
+.button2:active{
+    background-color:#bbd3ff;
+}
+
+.button3{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    background-color:#5993ff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button3:active{
+    background-color:#bbd3ff;
+}
+
+.button3:hover{
+    transform: scale(0.99);
+}
+
+.button4{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-top: 155px;
+    background-color:#5993ff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button4:hover{
+    transform: scale(0.99);
+}
+
+.button4:active{
+    background-color:#bbd3ff;
+}
+
+.button5{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    margin-top:155px;
+    background-color:#ff67b3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button5:hover{
+    transform: scale(0.99);
+}
+
+.button5:active{
+    background-color:#ffbfdf;
+}
+
+.button6{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    margin-top: 155px;
+    background-color:#ff67b3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button6:hover{
+    transform: scale(0.99);
+}
+
+.button6:active{
+    background-color:#ffbfdf;
+}
+
+.button7{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-top: 310px;
+    background-color:#ff67b3;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button7:hover{
+    transform: scale(0.99);
+}
+
+.button7:active{
+    background-color:#ffbfdf;
+}
+
+.button8{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    margin-top: 310px;
+    background-color:#ffbd42;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button8:hover{
+    transform: scale(0.99);
+}
+
+.button8:active{
+    background-color:#ffe8bd;
+}
+
+.button9{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    margin-top: 310px;
+    background-color:#ffbd42;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.button9:hover{
+    transform: scale(0.99);
+}
+
+.button9:active{
+    background-color:#ffe8bd;
+}
+
+#buttonPlay {
+    position: absolute;
+    color: #f6fae6;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    right: 100px;
+    top: 550px;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#buttonPlay:hover {
+    opacity: 100%;
+}
+
+#buttonPause {
+    position: absolute;
+    color: #f6fae6;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    right: 100px;
+    top: 550px;
+    cursor: pointer;
+    opacity: 70%;
+}
+#buttonPause:hover {
+    opacity: 100%;
+}
+
+.hidden {
+    display: none !important;
+
+}
+#buttonTrash {
+    position: absolute;
+    color: #f6fae6;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    right: 10px;
+    top: 550px;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+#buttonTrash:hover {
+    opacity: 100%;
+}
+
+#buttonRandom {
+    position: absolute;
+    color: #f6fae6;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    right: 300px;
+    top: 550px;
+    cursor: pointer;
+    opacity: 70%;
+
+}
+
+#buttonRandom:hover {
+    opacity: 100%;
+}
+
+#buttonRecord {
+    position: absolute;
+    color: #f6fae6;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    right: 220px;
+    top: 550px;
+    cursor: pointer;
+    opacity: 70%;
+}
+#buttonRecord:hover {
+    opacity: 100%;
+}
