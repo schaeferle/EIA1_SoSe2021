@@ -1,6 +1,6 @@
 namespace Aufgabe8 {
     window.addEventListener("load", function (): void {
-      var sounds: HTMLAudioElement[] = [new Audio("L07_task_material_assets_A.mp3"), new Audio("L07_task_material_assets_C.mp3"), new Audio("L07_task_material_assets_F.mp3"), new Audio("L07_task_material_assets_G.mp3") new Audio("L07_task_material_assets_G.mp3"), new Audio("L07_task_material_assets_snare.mp3"), new Audio("L07_task_material_assets_hihat.mp3"), new Audio("L07_task_material_assets_kick.mp3"), new Audio("L07_task_material_assets_laugh-1.mp3"), new Audio("L07_task_material_assets_laugh-2.mp3")];
+      var sounds: HTMLAudioElement[] = [new Audio("L07_task_material_assets_A.mp3"), new Audio("L07_task_material_assets_C.mp3"), new Audio("L07_task_material_assets_F.mp3"), new Audio("L07_task_material_assets_G.mp3"), new Audio("L07_task_material_assets_G.mp3"), new Audio("L07_task_material_assets_snare.mp3"), new Audio("L07_task_material_assets_hihat.mp3"), new Audio("L07_task_material_assets_kick.mp3"), new Audio("L07_task_material_assets_laugh-1.mp3"), new Audio("L07_task_material_assets_laugh-2.mp3")];
       var index: number = 0;
       document.querySelector(".button1").addEventListener("click", function (): void { playSample(sounds[0]); });
       document.querySelector(".button2").addEventListener("click", function (): void { playSample(sounds[1]); });
@@ -87,14 +87,4 @@ namespace Aufgabe8 {
       
   
   
-        });
-  
-        
-  
-        
-        
-        
-  
-  
-  
-      }
+        );})})}
