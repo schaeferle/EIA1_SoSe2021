@@ -38,12 +38,12 @@ window.addEventListener("click", function () {
                 checked: false
             });
             drawListToDOM();
-            console.log("Neue Aufgabe wird erstellt: " + wildcard);
-            artyom.say("Deine Aufgabe" + wildcard + " wurde ergänzt");
+            console.log("Folgende Aufgabe wird der Liste hinzugefügt: " + wildcard);
+            artyom.say("Deine Aufgabe" + wildcard + " wurde der Liste hinzugefügt.");
         }
     });
-    document.querySelector("#sprachBtn").addEventListener("click", function () {
-        artyom.say("Spracheingabe ist aktiviert");
+    document.querySelector("#voiceControl").addEventListener("click", function () {
+        artyom.say("Welche Aufgabe soll ich der Liste hinzufügen?");
         startContinuousArtyom();
     });
 });
