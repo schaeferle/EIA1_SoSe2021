@@ -1,103 +1,137 @@
 header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    height: 40px;
-    color: rgb(255, 255, 255);
-    font-size: 35px;
-    margin-left: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    width: 100% ;
+    height: 80px ;
+    color: rgb(255, 255, 255) ;
+    font-size: 35px ;
+    font-weight: bold ;
+    margin-left: 75px ;
 }
 
 body{
-    background-image: url("bg.png");
+    background-image: url("bg.png") ;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: lighter ;
+    font-style: italic ;
+    color: rgb(24, 0, 68) ;
+    font-size: 25px ;
+    margin-bottom: -20px ;
+    margin-left: 20px ;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: lighter ;
+    font-style: italic;
+    color: rgb(24, 0, 68) ;
+    font-size: 25px ;
+    margin-top: 0px ;
+    margin-left: 20px ;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-image: linear-gradient(to right,
+    rgb(24, 0, 68), rgba(0, 0, 0, 0)) ; 
+    margin-top: 25px ;
+    width: 900px;
+    margin-left: 0;
 }
 
 .karte{
     width:116px;
     height:178px;
     box-shadow: 2px 2px 5px rgb(41, 41, 41) ;
-    border-radius: 10px;
-    border-color: rgb(24, 0, 68);
-    border-style: solid;
+    border-radius: 10px ;
+    border-color: rgb(24, 0, 68) ;
+    border-style: solid ;
+}
+
+.Kartenwert{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: rgb(255, 255, 255) ;
+    text-shadow: 5px 5px rgb(0, 0, 0) ;
+    font-size: 100px ;
+    display: inline ;
+    padding-left: 30px ;
+}
+
+.Rot{
+    background-color: rgb(199, 42, 24) ;
+}
+.Gelb{
+    background-color: rgb(230, 202, 30) ;
+}
+.Blau{
+    background-color: rgb(0, 99, 179) ;
+}
+.Grün{
+    background-color: rgb(0, 128, 0) ;
 }
 
 .karte.umgedreht{
     background-image: url("kartenrueckseite.jpg");
 }
 
-.Kartenwert{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px rgb(0, 0, 0) ;
-    font-size: 100px;
-    display: inline;
-    padding-left: 28px;
-}
-
-.Rot{
-    background-color: rgb(199, 42, 24);
-}
-.Gelb{
-    background-color: rgb(230, 202, 30);
-}
-.Blau{
-    background-color: rgb(0, 99, 179);
-}
-.Grün{
-    background-color: rgb(0, 128, 0);
+#Ablagestapel{
+    float: left ;
+    height: 150px ;
+    width: 75px ;
+    margin-left: 35px ;
 }
 
 #Zugstapel{
-    float: left;
-    height: 150px;
-    width: 75px;
-    margin-left: 50px;
-}
-
-#Ablagestapel{
-    float: left;
-    height: 150px;
-    width: 75px;
-    margin-left: 220px;
-}
-
-#Zugstapel .karte{
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 80px;
-    cursor: pointer;
+    float: left ;
+    height: 150px ;
+    width: 75px ;
+    margin-left: 100px ;
 }
 
 #Ablagestapel .karte{
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: 80px;
+    display: inline-block ;
+    margin-top: 40px ;
+    margin-left: 80px ;
+}
+
+#Zugstapel .karte{
+    display: inline-block ;
+    margin-top: 40px ;
+    margin-left: 60px ;
+    cursor: pointer ;
 }
 
 #DeckComputer{
-    height: 200px;
-    width: 100%;
-    clear: both;
+    height: 200px ;
+    width: 100% ;
+    clear: both ;
+    border-style: none ;
 }
 
 #DeckSpieler{
-    height: 200px;
-    width: 100%;
-    clear: both;
-    padding-top: 70px;
+    height: 200px ;
+    width: 100% ;
+    clear: both ;
+    padding-top: 70px ;
+    padding-bottom: 25px;
+    border-style: none ;
 }
 
 #DeckComputer .karte{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-top: 30px;
-    cursor: not-allowed;
+    display: inline-block ;
+    margin-top: 30px ;
+    margin-left: 30px ;
+    margin-right: 10px ;
+    cursor: not-allowed ;
 }
 
 #DeckSpieler .karte{
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-top: 30px;
-    cursor: pointer;
+    display: inline-block ;
+    margin-top: 30px ;
+    margin-left: 30px ;
+    margin-right: 10px ;
+    cursor: pointer ;
 }

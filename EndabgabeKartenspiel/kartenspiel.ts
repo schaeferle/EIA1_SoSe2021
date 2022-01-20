@@ -2,8 +2,8 @@ interface karte {//Interface der Karten
     Kartenwert: number;//Kartenwert
     Kartenfarbe: String;//Kartenfarbe
 }
-let DeckSpieler: karte[] = [];//Die 4 Karten des Spielers
-let DeckComputer: karte[] = [];//Die 4 Karten des Gegners
+let DeckSpieler: karte[] = [];//Die 3 Karten des Spielers
+let DeckComputer: karte[] = [];//Die 3 Karten des Gegners
 let Zugstapel: karte[] = [];//Der Stapel um Karten aufzunehmen
 let Ablagestapel: karte[] = [];//Der Stapel der abgelegten Karten
  
@@ -67,9 +67,9 @@ function KarteUmgedreht(karte: karte, Target: string, index: number){//Umgedreht
 function Start(){
     generateKarte();//Karten werden generiert
     Zugstapel = mixItUp(Zugstapel);//Karten im Zugstapel werden gemischt
-    for (let i=0; i<4; i++){//i zählt bis vier => Karten des Spielers
+    for (let i=0; i<3; i++){//i zählt bis drei => Karten des Spielers
         DeckSpieler.push(Zugstapel[i]);//Karten für den Spieler
-        DeckComputer.push(Zugstapel[i+4]);//Karten für den Computer
+        DeckComputer.push(Zugstapel[i+3]);//Karten für den Computer
     }
     
     //Stapel werden erstellt
@@ -207,9 +207,9 @@ function mixItUp(array : karte[]){
 //Spielende Alert
 function SpielEnde(win: boolean){
     if (win){
-        alert("Gewonnen! Drücke F5 um das Spiel neu zu starten.");
+        alert("Spieler hat gewonnen! Drücke F5 um das Spiel neu zu starten.");
     }
     else {
-        alert("Verloren! Drücke F5 um das Spiel neu zu starten.");
+        alert("Computer hat gewonnen! Drücke F5 um das Spiel neu zu starten.");
     }
 }
