@@ -6,12 +6,9 @@ header {
     font-size: 35px;
     margin-left: 75px;
 }
+
 body{
     background-image: url("bg.png");
-}
-
-.karte.umgedreht{
-    background-image: url("kartenrueckseite.jpg");
 }
 
 .karte{

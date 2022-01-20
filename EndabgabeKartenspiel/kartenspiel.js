@@ -73,7 +73,7 @@ function Start() {
 }
 function SpieleKarte(karte, index) {
     if (karte.Kartenwert == Ablagestapel[Ablagestapel.length - 1].Kartenwert || karte.Kartenfarbe == Ablagestapel[Ablagestapel.length - 1].Kartenfarbe) { //Farbe oder Wert gleich?
-        Ablagestapel.push(karte); //Karte darf auf den Ablaestapel
+        Ablagestapel.push(karte); //Karte darf auf den Ablagestapel
         DeckSpieler.splice(index, 1); //Deck des Spielers nimmt um gespielte Karte ab 
         if (DeckSpieler.length < 1) {
             SpielEnde(true);
