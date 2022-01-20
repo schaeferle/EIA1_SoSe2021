@@ -52,7 +52,7 @@ function generateKarteHTML(karte: karte, Target: string, index: number){//Karten
     Number.innerHTML = "" + karte.Kartenwert;
     holdingDiv.appendChild(Number);
 
-    if (Target == "SpielerDeck"){//Karten kommen ins Deck des Spielers und werden anklickbar
+    if (Target == "DeckSpieler"){//Karten kommen ins Deck des Spielers und werden anklickbar
         holdingDiv.addEventListener("click", function() {SpieleKarte(karte, index)}, false);//Klickt man wird die entsprechende Karte abgelegt
     }
 }
@@ -93,7 +93,8 @@ function Start(){
     KarteUmgedreht(Zugstapel[Zugstapel.length-1],"Zugstapel",Zugstapel.length-1);//Zugstapel wird generiert
 }
 
-function SpieleKarte(karte: karte, index: number){//Funktion zum Spielen der Karten
+//Zug des Spielers
+function SpieleKarte(karte: karte, index: number){
     if (karte.Kartenwert == Ablagestapel[Ablagestapel.length-1].Kartenwert||karte.Kartenfarbe == Ablagestapel[Ablagestapel.length-1].Kartenfarbe){//Farbe oder Wert gleich?
         Ablagestapel.push(karte);//Karte darf auf den Ablagestapel
         DeckSpieler.splice(index, 1);//Deck des Spielers nimmt um gespielte Karte ab 
@@ -157,12 +158,12 @@ function clearHTML(Target : string){
 }
 //Zug des Computers
 function ZugComputer(){
-    let i=0;    //Karten werden gecheckt
+    let i=0;//Karten werden gecheckt
     for (i; i<DeckComputer.length;i++){
         if (DeckComputer[i].Kartenfarbe == Ablagestapel[Ablagestapel.length-1].Kartenfarbe||DeckComputer[i].Kartenwert == Ablagestapel[Ablagestapel.length-1].Kartenwert){
-            Ablagestapel.push(DeckComputer[i]); //Karte wird auf den Ablagestapel gelegt
+            Ablagestapel.push(DeckComputer[i]);//Karte wird auf den Ablagestapel gelegt
             DeckComputer.splice(i,1);
-            if (DeckComputer.length < 1){SpielEnde(false);}  //Spielende?
+            if (DeckComputer.length < 1){SpielEnde(false);}//Spielende?
             updateHTML("DeckComputer");
             updateHTML("Ablagestapel");
              break;

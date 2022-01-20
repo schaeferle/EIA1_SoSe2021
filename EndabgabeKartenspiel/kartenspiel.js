@@ -38,7 +38,7 @@ function generateKarteHTML(karte, Target, index) {
     Number.setAttribute("class", "Kartenwert");
     Number.innerHTML = "" + karte.Kartenwert;
     holdingDiv.appendChild(Number);
-    if (Target == "SpielerDeck") { //Karten kommen ins Deck des Spielers und werden anklickbar
+    if (Target == "DeckSpieler") { //Karten kommen ins Deck des Spielers und werden anklickbar
         holdingDiv.addEventListener("click", function () { SpieleKarte(karte, index); }, false); //Klickt man wird die entsprechende Karte abgelegt
     }
 }
@@ -71,6 +71,7 @@ function Start() {
     generateKarteHTML(Ablagestapel[Ablagestapel.length - 1], "Ablagestapel", Ablagestapel.length - 1); //HTML für den Ablagestapel wird generiert
     KarteUmgedreht(Zugstapel[Zugstapel.length - 1], "Zugstapel", Zugstapel.length - 1); //Zugstapel wird generiert
 }
+//Zug des Spielers
 function SpieleKarte(karte, index) {
     if (karte.Kartenwert == Ablagestapel[Ablagestapel.length - 1].Kartenwert || karte.Kartenfarbe == Ablagestapel[Ablagestapel.length - 1].Kartenfarbe) { //Farbe oder Wert gleich?
         Ablagestapel.push(karte); //Karte darf auf den Ablagestapel
