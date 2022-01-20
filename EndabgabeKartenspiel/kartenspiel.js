@@ -178,10 +178,10 @@ function mixItUp(array) {
 //Spielende Alert
 function SpielEnde(win) {
     if (win) {
-        alert("Gewonnen!");
+        alert("Gewonnen! Drücke F5 um das Spiel neu zu starten.");
     }
     else {
-        alert("Verloren!");
+        alert("Verloren! Drücke F5 um das Spiel neu zu starten.");
     }
 }
 //# sourceMappingURL=kartenspiel.js.map

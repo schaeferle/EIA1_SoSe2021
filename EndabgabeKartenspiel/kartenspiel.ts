@@ -207,9 +207,9 @@ function mixItUp(array : karte[]){
 //Spielende Alert
 function SpielEnde(win: boolean){
     if (win){
-        alert("Gewonnen!");
+        alert("Gewonnen! Drücke F5 um das Spiel neu zu starten.");
     }
     else {
-        alert("Verloren!");
+        alert("Verloren! Drücke F5 um das Spiel neu zu starten.");
     }
 }
