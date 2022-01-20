@@ -34,10 +34,10 @@ function generateKarte(){
                 Color = "Grün"
             }
 
-            let NewCard: karte = { //Karten werden erstellt
+            let NeueKarte: karte = { //Karten werden erstellt
                 Kartenfarbe: Color,   Kartenwert: i
             }
-            Zugstapel.push(NewCard); //Karten werden in den Zugstapel gepusht
+            Zugstapel.push(NeueKarte); //Karten werden in den Zugstapel gepusht
         }
     } 
 }
@@ -104,26 +104,26 @@ function SpieleKarte(karte: karte, index: number){ //Funktion zum Spielen der Ka
     }
 }
 
-function checkCards(array : karte[]) : boolean { //Passt eine Karte?
-    let correctCard : boolean = false; 
+function checkKarten(array : karte[]) : boolean { //Passt eine Karte?
+    let richtigeKarte : boolean = false; 
     for (let i=0; i<array.length;i++) {  //Deck wird nach passender Karte durchsucht
         if (array[i].Kartenfarbe == Ablagestapel[Ablagestapel.length-1].Kartenfarbe || array[i].Kartenwert == Ablagestapel[Ablagestapel.length-1].Kartenwert){ //Farbe oder Wert gleich? 
-            correctCard = true; //Karte gefunden?
+            richtigeKarte = true; //Karte gefunden?
             break;
         }
     }
-    return correctCard; //Gefundene Karte geht zurück
+    return richtigeKarte; //Gefundene Karte geht zurück
 }
 
 function ZieheKarte(){   //Karten kann vom Zugstapel gezogen werden...
-    if(checkCards(DeckSpieler)==false){  //... falls keine andere Karte im Deck passt.
+    if(checkKarten(DeckSpieler)==false){  //... falls keine andere Karte im Deck passt.
         DeckSpieler.push(Zugstapel[Zugstapel.length-1]); //Karte erscheint im Deck des Spielers
         Zugstapel.splice(Zugstapel.length-1, 1); //Zugstapel schrumpft
         updateHTML("Zugstapel");   
         updateHTML("DeckSpieler");
       
     }
-    if(checkCards(DeckSpieler)==false){ //Kann Spieler legen?
+    if(checkKarten(DeckSpieler)==false){ //Kann Spieler legen?
         ZugComputer(); //Computer ist am Zug
     }
 }
