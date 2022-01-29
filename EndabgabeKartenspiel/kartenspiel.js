@@ -1,3 +1,9 @@
+/*
+Endaufgabe: Kartenspiel
+Name: Eliasschäfer
+Matrikelnummer: 268512
+Datum: 13.02.22
+*/
 let DeckSpieler = []; //Die 3 Karten des Spielers
 let DeckComputer = []; //Die 3 Karten des Gegners
 let Zugstapel = []; //Der Stapel um Karten aufzunehmen
@@ -35,7 +41,7 @@ function generateKarteHTML(karte, Target, index) {
     holdingDiv.setAttribute("class", "karte" + " " + karte.Kartenfarbe); //Kartenfarbe wird zugeteilt
     document.getElementById(Target).appendChild(holdingDiv);
     let Number = document.createElement("p"); //Kartenwert wird zugeteilt
-    Number.setAttribute("class", "Kartenwert");
+    Number.setAttribute("class", "kartenwert");
     Number.innerHTML = "" + karte.Kartenwert;
     holdingDiv.appendChild(Number);
     if (Target == "DeckSpieler") { //Karten kommen ins Deck des Spielers und werden anklickbar
@@ -178,10 +184,12 @@ function mixItUp(array) {
 //Spielende Alert
 function SpielEnde(win) {
     if (win) {
-        alert("Spieler hat gewonnen! Drücke F5 um das Spiel neu zu starten.");
+        alert("Spieler hat gewonnen! Drücke OK um das Spiel neu zu starten.");
+        window.location.reload();
     }
     else {
-        alert("Computer hat gewonnen! Drücke F5 um das Spiel neu zu starten.");
+        alert("Computer hat gewonnen! Drücke OK um das Spiel neu zu starten.");
+        window.location.reload();
     }
 }
 //# sourceMappingURL=kartenspiel.js.map

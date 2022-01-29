@@ -3,6 +3,7 @@ header {
     width: 100% ;
     height: 80px ;
     color: rgb(255, 255, 255) ;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0) ;
     font-size: 35px ;
     font-weight: bold ;
     margin-left: 75px ;
@@ -14,9 +15,10 @@ body{
 
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    font-weight: lighter ;
+    font-weight: bolder ;
     font-style: italic ;
-    color: rgb(24, 0, 68) ;
+    color: rgb(0, 12, 68) ;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255) ;
     font-size: 25px ;
     margin-bottom: -20px ;
     margin-left: 20px ;
@@ -24,9 +26,10 @@ h1 {
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    font-weight: lighter ;
+    font-weight: bolder ;
     font-style: italic;
-    color: rgb(24, 0, 68) ;
+    color: rgb(0, 12, 68) ;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255) ;
     font-size: 25px ;
     margin-top: 0px ;
     margin-left: 20px ;
@@ -36,10 +39,11 @@ hr {
     border: none;
     height: 3px;
     background-image: linear-gradient(to right,
-    rgb(24, 0, 68), rgba(0, 0, 0, 0)) ; 
+    rgb(0, 12, 68), rgba(0, 0, 0, 0)) ;
+    filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.644));
     margin-top: 25px ;
-    width: 900px;
-    margin-left: 0;
+    width: 700px;
+    margin-left: -10;
 }
 
 .karte{
@@ -47,17 +51,18 @@ hr {
     height:178px;
     box-shadow: 2px 2px 5px rgb(41, 41, 41) ;
     border-radius: 10px ;
-    border-color: rgb(24, 0, 68) ;
+    border-color: rgb(0, 12, 68) ;
     border-style: solid ;
 }
 
-.Kartenwert{
+.kartenwert{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     color: rgb(255, 255, 255) ;
     text-shadow: 5px 5px rgb(0, 0, 0) ;
     font-size: 100px ;
-    display: inline ;
-    padding-left: 30px ;
+    display: inline;
+    padding-inline-start: 30px ;
+    padding-bottom: 50px;
 }
 
 .Rot{
@@ -71,6 +76,22 @@ hr {
 }
 .Grün{
     background-color: rgb(0, 128, 0) ;
+}
+
+.Rot:hover {
+    box-shadow: 0px 0px 15px rgb(199, 42, 24);
+}
+
+.Gelb:hover {
+    box-shadow: 0px 0px 15px rgb(230, 202, 30);
+}
+
+.Blau:hover {
+    box-shadow: 0px 0px 15px rgb(0, 99, 179);
+}
+
+.Grün:hover {
+    box-shadow: 0px 0px 15px rgb(0, 128, 0);
 }
 
 .karte.umgedreht{
@@ -95,6 +116,7 @@ hr {
     display: inline-block ;
     margin-top: 40px ;
     margin-left: 80px ;
+    transition: 0.3s;
 }
 
 #Zugstapel .karte{
@@ -102,6 +124,7 @@ hr {
     margin-top: 40px ;
     margin-left: 60px ;
     cursor: pointer ;
+    transition: 0.3s;
 }
 
 #DeckComputer{
@@ -126,6 +149,7 @@ hr {
     margin-left: 30px ;
     margin-right: 10px ;
     cursor: not-allowed ;
+    transition: 0.3s;
 }
 
 #DeckSpieler .karte{
@@ -134,4 +158,13 @@ hr {
     margin-left: 30px ;
     margin-right: 10px ;
     cursor: pointer ;
+    transition: 0.3s;
+}
+
+#Zugstapel .karte:hover {
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+#Ablagestapel .karte:hover{
+    box-shadow: 2px 2px 5px rgb(41, 41, 41) ;
 }
